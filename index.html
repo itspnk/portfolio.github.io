@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PnK - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+    <script src="https://kit.fontawesome.com/be0bf99901.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <!--This NavBar-->
+            <div class="navbar">
+                <nav>
+                    <img src="Pnk logo-1.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+            <div class="header-text">
+                <h1><span id="hey">Hey!</span> I'm <br><span>Pragyanand Kaushik</span></h1>
+                <h3>Web Designer <span>and</span> Software Developer</h3>
+            </div>
+        </div>
+    </div>
+    <!--This is About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Profile-1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A talented Software Engineer aspiring to gain a full-time position in a reputed company. Gained extensive knowledge in software development, testing, and deployment through trainings. A highly motivated and hardworking individual skilled in Java, SQL, and ReactJS. Seeking a position to utilize the gained skills and experience to positively contribute to the company.                    </p>
+                    <div class="contains">
+                        <!--Skill Area-->
+                        <div class="tab-titles">
+                            <ul>
+                                <li class="tab-links active-link" onclick="opentab('details')">Basic Details</li>
+                                <li class="tab-links" onclick="opentab('skills')">Skills</li>
+                                <li class="tab-links" onclick="opentab('experience')">Experience</li>
+                                <li class="tab-links" onclick="opentab('education')">Education</li>
+                            </ul>
+                        </div>
+                        
+                            <div class="tab-contents active-tab" id="details">
+                                <ul>
+                                    <li><span>DOB:</span><br>June 19,2000</li>
+                                    <li><span>Languauges:</span><br>Hindi & English</li>
+                                    <li><span>Nationality:</span><br>Indian </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="skills">
+                                <ul>
+                                    <li><span>Programming Skills</span><br>Java, C#, JavaScript, HTML5, CSS3, ReactJS, <br> Node.JS, Spring Boot, MVC</li>
+                                    <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Develop Web Applications</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>N/A</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022</span><br>Advanced Computing Training at Centre for Development in Advanced Compunting, Pune</li>
+                                    <li><span>2022</span><br>B.Tech in Electrical Engineering from AKTU Lucknow.</li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--This is Service Section-->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi iure molestias rerum atque, ex blanditiis repellendus distinctio quae ipsam ratione fuga enim dolorum consectetur. Labore nostrum animi sunt fuga.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi iure molestias rerum atque, ex blanditiis repellendus distinctio quae ipsam ratione fuga enim dolorum consectetur. Labore nostrum animi sunt fuga.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Website Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi iure molestias rerum atque, ex blanditiis repellendus distinctio quae ipsam ratione fuga enim dolorum consectetur. Labore nostrum animi sunt fuga.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is Contact Section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-1">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a class="mailto" href="mailto:pragyanandkaushik19@gmail.com"><i class="fa-solid fa-envelope"></i> pragyanandkaushik19@gmail.com</a></p>
+                    <p><a class="call" href="tel:+918318246070"><i class="fa-solid fa-square-phone"></i> +91 8318246070</a></p>
+                    <div class="social-icons">
+                        <a class="link" href="https://www.linkedin.com/in/pragyanand-kaushik"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                        <a class="twit" href="https://www.twitter.com/PnKBanarasiya/"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a class="insta" href="https://www.instagram.com/itspnk/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a class="fb" href="https://www.facebook.com/Pragyanand Kaushik/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+                <div class="contact-col-2">
+                    <form action="submit" method="get" name="submit-to-google-sheet">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="em" placeholder="e.g. xyz123@gmail.com" required>
+                        <label for="text">Message:</label>
+                        <textarea name="message" placeholder="Please type your message here" cols="30" rows="10" required></textarea>
+                        <button type="submit" onclick="sub()">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is Resume Section-->
+    <div id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-3">
+                    <a href="img/my-resume.pdf" download class="resbut"><img src="img/Resume.jpg"></a>
+                </div>
+                <div class="about-col-4">
+                    <h1 class="sub-title">Resume</h1>
+                    <p>For hiring or giving an oppurtunity according to my skills and qualifications,
+                        <br> you can download my resume from here.
+                        <br>Thank You!</p>
+                    <a href="img/my-resume.pdf" download class="but">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;  Pragyanand Kaushik - 2023</p>
+    </div>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxIiytuFKtLTIqrhZIxcLMkoVLoqmw0lYuDriXSyRbfpkQxaNkMspRBEiOJc6Mbnn2D/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            } )
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
